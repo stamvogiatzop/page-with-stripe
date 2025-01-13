@@ -97,7 +97,7 @@ const server = http.createServer((req, res) => {
   }
 });
 
-// the even name is "connection" - found in Documentation
+// the event name is "connection" - found in Documentation
 server.on('connection', (socket) => {
   console.log('New connection...');
 
