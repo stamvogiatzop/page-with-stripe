@@ -3,5 +3,25 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "stripe": "^17.5.0"
-  }
+  },
+  "name": "page-with-stripe",
+  "version": "1.0.0",
+  "description": "Beginner project, experimenting with stripe payment in page",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stamvogiatzop/page-with-stripe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stamvogiatzop/page-with-stripe/issues"
+  },
+  "homepage": "https://github.com/stamvogiatzop/page-with-stripe#readme"
 }
