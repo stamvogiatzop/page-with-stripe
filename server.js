@@ -1,15 +1,14 @@
-require('dotenv').config()
-const apiKey = process.env.STRIPE_SECRET_KEY
+// require('dotenv').config()
+// const apiKey = process.env.STRIPE_SECRET_KEY
 
-const stripe = require('stripe')(apiKey);
-const express = require('express');
-const http = require('http');
-const fs = require('fs');
+import http from 'http';
+
+import fs from 'fs';
 
 const server = http.createServer((req, res) => {
   if (req.method === 'GET' && req.url === '/') {
     // Serve the homepage
-    fs.readFile('./index.html', (err, data) => {
+    fs.readFile('/public/index.html', (err, data) => {
       if (err) {
         res.writeHead(500, { 'Content-Type': 'text/plain' });
         res.end('Server error');
